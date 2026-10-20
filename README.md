@@ -18,7 +18,13 @@ Se utiliza el conjunto de datos **Online Retail**, distribuido originalmente com
 - Jornadas con registros: **305**.
 - Jornadas consideradas para el modelado: **304**.
 
-El archivo original no se distribuye en este repositorio. Para reproducir el análisis es necesario obtenerlo de su fuente original y comprobar las condiciones de uso.
+**Fuente oficial:** [Online Retail — UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail)
+
+**Autor y referencia:** Chen, D. (2015). *Online Retail* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33
+
+**Licencia:** Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+El archivo original `Online Retail.xlsx` no se incluye en este repositorio. Puede descargarse desde la fuente oficial para reproducir el análisis, respetando las condiciones de atribución de la licencia.
 
 ## 3. Preparación y calidad de datos
 
