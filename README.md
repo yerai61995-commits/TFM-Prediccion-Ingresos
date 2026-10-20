@@ -119,6 +119,25 @@ Por tanto, se recomienda **la media de siete jornadas como referencia operativa 
 
 Los errores de predicción no representan automáticamente pérdidas económicas reales.
 
+### Interpretación empresarial de los resultados
+
+Además de MAE y RMSE, se analizaron las desviaciones de las predicciones respecto a los ingresos comerciales reales durante las 45 jornadas de prueba.
+
+| Indicador | Media de 7 jornadas | Random Forest |
+|---|---:|---:|
+| Error absoluto medio | 14.015,88 £ | 18.924,47 £ |
+| Suma de importes infraestimados | 378.730,16 £ | 839.841,56 £ |
+| Suma de importes sobreestimados | 251.984,62 £ | 11.759,59 £ |
+| Jornadas infraestimadas | 23 de 45 | 41 de 45 |
+
+Random Forest muestra una tendencia más acusada a infraestimar los ingresos durante el periodo de prueba. Esta característica podría afectar a la planificación empresarial si las predicciones se utilizaran para dimensionar recursos, personal o existencias.
+
+La media de siete jornadas presenta un comportamiento más equilibrado y un menor error absoluto medio, lo que respalda su elección como referencia operativa.
+
+Estas desviaciones representan diferencias entre valores reales y estimados. **No equivalen a pérdidas económicas efectivas**, ya que no se dispone de información suficiente para cuantificar su impacto financiero.
+
+En una aplicación empresarial futura, sería recomendable establecer costes asociados a la sobreestimación y la infraestimación para evaluar directamente las consecuencias económicas de cada modelo.
+
 ## 9. Dashboard de Tableau
 
 Se ha desarrollado un dashboard que incluye:
