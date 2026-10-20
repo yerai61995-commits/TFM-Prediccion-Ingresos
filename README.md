@@ -182,6 +182,10 @@ No se ha implementado un servicio de producción; se presenta una propuesta conc
 - Análisis exploratorio y preparación de datos: completados.
 - Modelado y comparación: completados.
 - Evaluación final y explicabilidad: completadas.
+- Dashboard de Tableau: incorporado al repositorio.
+- Resultados CSV: incorporados al repositorio.
+- Notebook académico: ejecutado y documentado.
+- Revisión final de requisitos oficiales y reproducibilidad: pendiente.
 
 ## 15. Arquitectura y flujo completo del sistema
 
@@ -327,7 +331,3 @@ Una API o un contenedor Docker serían opciones de ampliación, pero no son nece
 ### 17.5. Limitación de la propuesta
 
 El despliegue es exclusivamente conceptual. No se han implementado mecanismos automáticos de producción, reentrenamiento ni monitorización continua.
-- Dashboard de Tableau: incorporado al repositorio.
-- Resultados CSV: incorporados al repositorio.
-- Notebook académico: ejecutado y documentado.
-- Revisión de requisitos oficiales y documentación final del TFM: pendiente.
