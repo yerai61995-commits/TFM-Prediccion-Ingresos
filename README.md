@@ -138,6 +138,37 @@ Estas desviaciones representan diferencias entre valores reales y estimados. **N
 
 En una aplicación empresarial futura, sería recomendable establecer costes asociados a la sobreestimación y la infraestimación para evaluar directamente las consecuencias económicas de cada modelo.
 
+### 8.1. Predicción de la siguiente jornada comercial
+
+Una vez evaluados los modelos, se realizó una predicción adicional para demostrar cómo funcionaría el sistema utilizando únicamente los últimos datos históricos disponibles.
+
+Se utilizó la **media de las siete jornadas anteriores**, ya que este método obtuvo el menor error absoluto medio durante la prueba final.
+
+Las jornadas consideradas fueron:
+
+| Fecha | Ingresos comerciales (£) |
+|---|---:|
+| 01/12/2011 | 51.410,95 |
+| 02/12/2011 | 57.086,06 |
+| 04/12/2011 | 24.565,78 |
+| 05/12/2011 | 88.274,72 |
+| 06/12/2011 | 54.228,37 |
+| 07/12/2011 | 75.061,22 |
+| 08/12/2011 | 81.417,78 |
+
+**Resultado de la predicción: 61.720,70 £.**
+
+Este importe representa la estimación para la siguiente jornada con registros de transacciones después del 8 de diciembre de 2011.
+
+La predicción se obtiene calculando el promedio de los ingresos de las últimas siete jornadas registradas, sin utilizar información posterior.
+
+**Interpretación empresarial:** esta previsión podría servir como referencia inicial para planificar personal, recursos o existencias. No obstante, el importe estimado no garantiza los ingresos futuros.
+
+**Limitaciones:** se trata de una predicción histórica, no de una previsión actual. No se conoce la fecha exacta de la siguiente jornada con actividad y no se dispone de un resultado posterior fiable dentro de la serie de modelado con el que validar esta estimación adicional.
+
+El código para reproducir el cálculo se encuentra al final de `notebooks/01_analisis_exploratorio_final.ipynb`, y el resultado se ha exportado al archivo `resultados/prediccion_siguiente_jornada.csv`.
+
+
 ## 9. Dashboard de Tableau
 
 Se ha desarrollado un dashboard que incluye:
