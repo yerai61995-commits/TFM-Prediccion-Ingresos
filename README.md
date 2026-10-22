@@ -242,7 +242,7 @@ No se ha implementado un servicio de producción; se presenta una propuesta conc
 - Dashboard de Tableau: incorporado al repositorio.
 - Resultados CSV: incorporados al repositorio.
 - Notebook académico: ejecutado y documentado.
-- Revisión final de requisitos oficiales y reproducibilidad: pendiente.
+- Revisión de requisitos oficiales y reproducibilidad: completada.
 
 ## 15. Arquitectura y flujo completo del sistema
 
