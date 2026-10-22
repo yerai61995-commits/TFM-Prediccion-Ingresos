@@ -168,6 +168,38 @@ La predicción se obtiene calculando el promedio de los ingresos de las últimas
 
 El código para reproducir el cálculo se encuentra al final de `notebooks/01_analisis_exploratorio_final.ipynb`, y el resultado se ha exportado al archivo `resultados/prediccion_siguiente_jornada.csv`.
 
+### 8.2. Traducción a métricas de negocio: simulación de costes
+
+Para complementar las métricas estadísticas, se plantea un escenario hipotético que permite comparar las posibles consecuencias económicas de los errores de predicción.
+
+Se considera que infraestimar los ingresos puede generar problemas de planificación, como falta de personal o existencias, mientras que sobreestimarlos podría ocasionar gastos innecesarios.
+
+Como no se dispone de los costes operativos reales de la empresa, se establecen dos **supuestos ilustrativos**, que no representan porcentajes observados en el negocio:
+
+- **Infraestimación:** penalización del 20 % sobre el importe infraestimado.
+- **Sobreestimación:** penalización del 5 % sobre el importe sobreestimado.
+
+La función utilizada es:
+
+$$
+Coste = \sum \left[0,20 \cdot \max(0,y-\hat{y})+0,05 \cdot \max(0,\hat{y}-y)\right]
+$$
+
+Donde \(y\) representa los ingresos reales y \(\hat{y}\) los ingresos estimados.
+
+Aplicando estos supuestos a las desviaciones acumuladas durante las 45 jornadas del conjunto de prueba:
+
+| Modelo | Coste por infraestimación | Coste por sobreestimación | Coste total simulado |
+|---|---:|---:|---:|
+| **Media de 7 jornadas** | 75.746,03 £ | 12.599,23 £ | **88.345,26 £** |
+| Random Forest | 167.968,31 £ | 587,98 £ | 168.556,29 £ |
+
+En este escenario, la media de siete jornadas presenta un coste simulado **80.211,03 £ inferior** al de Random Forest.
+
+El resultado refuerza la selección de la media de siete jornadas como referencia operativa bajo los supuestos establecidos.
+
+**Limitaciones:** estos importes no representan pérdidas económicas reales. Los porcentajes se han elegido únicamente para ilustrar una comparación empresarial y deberían ajustarse utilizando datos reales de márgenes, inventario, personal y costes operativos. Una modificación de estas penalizaciones podría alterar las conclusiones.
+
 
 ## 9. Dashboard de Tableau
 
