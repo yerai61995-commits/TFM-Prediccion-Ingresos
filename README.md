@@ -194,7 +194,8 @@ TFM-Prediccion-Ingresos/
 │   └── TFM_Prediccion_Ingresos.twbx
 ├── resultados/
 │   ├── ingresos_tableau.csv
-│   └── predicciones_tableau.csv
+│   ├── predicciones_tableau.csv
+│   └── prediccion_siguiente_jornada.csv
 ├── README.md
 └── requirements.txt
 ```
@@ -214,7 +215,7 @@ Los CSV destinados a Tableau utilizan separador `;`, coma decimal y codificació
 
 Las celdas que utilizan `google.colab` son específicas de Colab y requieren adaptación u omisión al ejecutar el notebook en otro entorno.
 
-El notebook final se ha ejecutado íntegramente en Google Colab y se han comprobado los resultados principales. Queda pendiente una prueba independiente de reproducibilidad en un entorno limpio.
+El notebook final se ha ejecutado íntegramente en Google Colab, incluyendo una prueba desde un entorno de ejecución limpio con el dataset original. Se ha comprobado que los resultados principales de validación y prueba coinciden con los documentados. Además, se ha generado correctamente la previsión adicional de **61.720,70 £**.
 
 ## 12. Limitaciones
 
