@@ -166,7 +166,7 @@ La predicción se obtiene calculando el promedio de los ingresos de las últimas
 
 **Limitaciones:** se trata de una predicción histórica, no de una previsión actual. No se conoce la fecha exacta de la siguiente jornada con actividad y no se dispone de un resultado posterior fiable dentro de la serie de modelado con el que validar esta estimación adicional.
 
-El código para reproducir el cálculo se encuentra al final de `notebooks/01_analisis_exploratorio_final.ipynb`, y el resultado se ha exportado al archivo `resultados/prediccion_siguiente_jornada.csv`.
+El código para reproducir el cálculo se encuentra al final de notebooks/01_analisis_exploratorio_completo.ipynb, y el resultado se ha exportado al archivo resultados/prediccion_siguiente_jornada.csv.
 
 ### 8.2. Traducción a métricas de negocio: simulación de costes
 
@@ -217,10 +217,10 @@ El archivo se encuentra en:
 ## 10. Estructura del repositorio
 
 ```text
+
 TFM-Prediccion-Ingresos/
 ├── notebooks/
-│   ├── 01_analisis_exploratorio_final.ipynb
-│   ├── 01_analisis_exploratorio_documentado.ipynb
+│   ├── 01_analisis_exploratorio_completo.ipynb
 │   └── 01_analisis_exploratorio_original.ipynb
 ├── dashboard/
 │   └── TFM_Prediccion_Ingresos.twbx
@@ -228,8 +228,11 @@ TFM-Prediccion-Ingresos/
 │   ├── ingresos_tableau.csv
 │   ├── predicciones_tableau.csv
 │   └── prediccion_siguiente_jornada.csv
+├── documentacion/
+│   └── Bitacora_Proyecto1_DEFINITIVA_22oct2026.pdf
 ├── README.md
 └── requirements.txt
+
 ```
 
 El archivo `01_analisis_exploratorio_final.ipynb` es la versión principal del análisis: incluye explicaciones, código y resultados de ejecución.
@@ -238,7 +241,7 @@ El archivo `01_analisis_exploratorio_final.ipynb` es la versión principal del a
 
 1. Descargar el repositorio y obtener `Online Retail.xlsx` de su fuente original.
 2. Instalar las dependencias indicadas en `requirements.txt`.
-3. Abrir `notebooks/01_analisis_exploratorio_final.ipynb` en Google Colab.
+3. Abrir notebooks/01_analisis_exploratorio_completo.ipynb en Google Colab.
 4. Subir `Online Retail.xlsx` al entorno de ejecución y comprobar que la ruta de lectura del notebook coincide con su ubicación.
 5. Ejecutar las celdas en orden.
 6. Revisar las métricas obtenidas y los archivos de resultados.
