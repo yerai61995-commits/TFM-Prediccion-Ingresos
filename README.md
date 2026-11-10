@@ -1,6 +1,6 @@
 # Predicción de Ingresos Comerciales mediante Machine Learning
 
-**Proyecto 1 — Trabajo Fin de Máster de Data Science con Inteligencia Artificial**
+**Proyecto 1 — Trabajo Fin de Máster de Data Science**
 
 **Centro de formación:** The Big School  
 **Autor:** Yerai Marín Segura  
